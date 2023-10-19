@@ -1,0 +1,85 @@
+{
+  "name": "qoruz-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint src --fix && yarn format",
+    "lint:strict": "eslint --max-warnings=0 src",
+    "typecheck": "tsc --noEmit --incremental false",
+    "test:watch": "jest --watch",
+    "test": "jest",
+    "format": "prettier -w .",
+    "format:check": "prettier -c .",
+    "prepare": "husky install"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "dependencies": {
+    "@next/bundle-analyzer": "^13.2.4",
+    "@next/font": "^13.4.3",
+    "@react-google-maps/api": "^2.18.1",
+    "@stitches/react": "^1.2.8",
+    "clsx": "^1.2.1",
+    "highcharts": "^11.1.0",
+    "next": "^13.1.6",
+    "prop-types": "^15.8.1",
+    "rc-slider": "^10.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-grid-system": "^8.1.8",
+    "react-headroom": "^3.2.1",
+    "react-hook-form": "^7.43.9",
+    "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.3",
+    "react-select": "^5.7.0",
+    "sharp": "^0.32.1",
+    "swiper": "^9.1.1",
+    "tailwind-merge": "^1.9.1",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.3.0",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@svgr/webpack": "^6.5.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/react": "^18.0.27",
+    "@types/react-headroom": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.34.0",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.5.0",
+    "next-router-mock": "^0.7.5",
+    "next-sitemap": "^2.5.28",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "sass": "^1.58.0",
+    "tailwindcss": "^3.2.6",
+    "typescript": "^4.9.5"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0",
+      "prettier -w"
+    ],
+    "**/*.{json,css,scss,md,webmanifest}": [
+      "prettier -w"
+    ]
+  }
+}

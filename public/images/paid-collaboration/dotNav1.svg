@@ -1,0 +1,31 @@
+<svg
+  width='12'
+  height='80'
+  viewBox='0 0 12 80'
+  fill='none'
+  xmlns='http://www.w3.org/2000/svg'
+>
+  <rect
+    width='12'
+    height='80'
+    rx='6'
+    fill='url(#paint0_linear_148_198)'
+  />
+  <defs>
+    <linearGradient
+      id='paint0_linear_148_198'
+      x1='6'
+      y1='0'
+      x2='6'
+      y2='80'
+      gradientUnits='userSpaceOnUse'
+    >
+      <stop stop-color='#FF6435' />
+      <stop
+        offset='1'
+        stop-color='#FF6435'
+        stop-opacity='0.51'
+      />
+    </linearGradient>
+  </defs>
+</svg>
